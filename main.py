@@ -2,17 +2,24 @@
 
 import cv2
 
-if __name__ == "__main__":
+def main():
+
+    name = "Hey"
+
     cam = cv2.VideoCapture(0)
-    cam.set(cv2.CAP_PROP_FPS, 10)
+    cam.set(cv2.CAP_PROP_FPS, 90)
     while(True):
         ret, frame = cam.read()
-        cv2.imshow("Hey", frame)
-        #letra 'q'
+        cv2.imshow(name, frame)
         fps = cam.get(cv2.CAP_PROP_FPS)
-        print(fps)
+        print(fps, end='\t')
+        #print(cv2.waitKey(1))
+        print()
+        #letra 'q'
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
-    cv2.realise()
-    cv2.destroyWindow() 
+    cam.release()
+    cv2.destroyWindow(name) 
 
+if __name__ == "__main__":
+    main()

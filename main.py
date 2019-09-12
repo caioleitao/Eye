@@ -7,7 +7,6 @@ def setup():
     for i in range(15):
         print("*",end='\t')
     print()
-    #print("!CLICK IN 'Q' FOR QUIT OF THE APP!")
     for i in range((int)(15/3)):
         print(" ", end='\t')
     print("!CLICK IN 'Q' FOR QUIT OF THE APP!")

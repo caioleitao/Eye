@@ -29,7 +29,7 @@ def main():
         fps = cam.get(cv2.CAP_PROP_FPS)
         print(fps)
         #letra 'q'
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        if cv2.waitKey(1) == ord('q'):
             break
     cam.release()
     cv2.destroyWindow(name) 

@@ -1,2 +1,2 @@
-# Eye
-PIBIC Rastreio dos Olhos
+# PIBIC-Eye
+Rastreio dos Olhos
